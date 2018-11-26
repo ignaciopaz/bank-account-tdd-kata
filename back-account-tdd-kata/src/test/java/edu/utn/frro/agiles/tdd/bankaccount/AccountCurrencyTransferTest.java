@@ -45,7 +45,7 @@ public class AccountCurrencyTransferTest {
 		usd.setCurrencyConverter(currencyConverter);
 		usd.transfer(10, eur);
 		assertThat(usd.getBalance(), equalTo(10.0));
-		assertThat(eur.getBalance(), equalTo(30+10*0.88));
+		assertThat(eur.getBalance(), equalTo(38.8));
 	}
 	
 }
